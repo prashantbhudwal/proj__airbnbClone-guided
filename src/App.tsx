@@ -1,9 +1,6 @@
+import Navbar from "./Components/Navbar/Navbar";
 const App = function () {
-  return (
-    <>
-      <p>Doge</p>
-    </>
-  );
+  return <Navbar />;
 };
 
 export default App;
