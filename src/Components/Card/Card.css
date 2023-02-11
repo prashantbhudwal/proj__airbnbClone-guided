@@ -1,0 +1,84 @@
+.card__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+/* Image container */
+.card__img-container {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 0.6em;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 9px;
+}
+
+.img__label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40%;
+    height: 8%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+/* Card Content */
+
+.card__title {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+/* Ratings */
+.ratings-container>p {
+    display: block;
+}
+
+.ratings-container>p>span {
+    margin-left: 0.2em;
+    color: #918E9B;
+}
+
+.ratings-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    font-size: 0.8rem;
+}
+
+.card__price {
+    font-size: 0.8rem;
+}
+
+.card__price>strong {
+    font-weight: 600;
+}
+
+
+.rating__starIcon {
+    background-image: url("/src/assets/images/star.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+}
