@@ -1,11 +1,11 @@
 import "./Card.css";
 
-function Card() {
+function Card({ guideData }: any) {
   return (
     <div className="card-container">
       <div className="card__img-container">
         <img
-          src="/src/assets/images/katie-zaferes.png"
+          src={`/src/assets/images/${guideData.img}`}
           alt=""
           className="card__img"
         />
@@ -15,16 +15,16 @@ function Card() {
         <div className="ratings-container">
           <div className="rating__starIcon"></div>
           <p className="star-rating">
-            5.0
-            <span className="ratings__quantity">(6)</span>
+            {guideData.rating}
+            <span className="ratings__quantity">({guideData.reviewCount})</span>
             <span className="dot">.</span>
-            <span className="location">USA</span>
+            <span className="location">{guideData.country}</span>
           </p>
         </div>
-        <h3 className="card__title">Life lessons with Kathie</h3>
+        <h3 className="card__title">{guideData.title}</h3>
         <div>
           <p className="card__price">
-            <strong>From $138</strong> / person
+            <strong>From ${guideData.price}</strong> / person
           </p>
         </div>
       </div>
