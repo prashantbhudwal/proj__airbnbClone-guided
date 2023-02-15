@@ -20,7 +20,7 @@ function Card({ guideData }: any) {
               ({guideData.stats.reviewCount})
             </span>
             <span className="dot">.</span>
-            <span className="location">{guideData.country}</span>
+            <span className="location">{guideData.location}</span>
           </p>
         </div>
         <h3 className="card__title">{guideData.title}</h3>
