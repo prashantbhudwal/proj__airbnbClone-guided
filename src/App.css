@@ -5,4 +5,15 @@
     align-items: center;
     justify-content: center;
     font-family: "Poppins";
+    gap: 3em;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: auto;
+    margin-bottom: 2em;
+
 }

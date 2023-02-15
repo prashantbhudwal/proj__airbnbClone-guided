@@ -12,7 +12,7 @@ const App = function () {
       <Navbar />
       <div className="app-container">
         <Hero />
-        <>{cardArray}</>
+        <div className="cardContainer">{cardArray}</div>
       </div>
     </>
   );
