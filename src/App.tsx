@@ -5,7 +5,9 @@ import Navbar from "./Components/Navbar/Navbar";
 import guide from "./data";
 
 const App = function () {
-  const cardArray = guide.map((guide) => <Card guideData={guide} />);
+  const cardArray = guide.map((guide) => (
+    <Card key={guide.id} guideData={guide} />
+  ));
 
   return (
     <>
