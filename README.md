@@ -31,4 +31,4 @@ The design does not seem to have a footer, and I think making that would be a ni
 
 # Results
 
-TBD.
+All the hypotheses were proven true. I chose to not build the footer.
