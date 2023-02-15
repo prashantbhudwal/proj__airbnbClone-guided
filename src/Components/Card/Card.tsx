@@ -5,7 +5,7 @@ function Card({ guideData }: any) {
     <div className="card-container">
       <div className="card__img-container">
         <img
-          src={`/src/assets/images/${guideData.img}`}
+          src={`/src/assets/images/${guideData.coverImg}`}
           alt=""
           className="card__img"
         />
@@ -15,8 +15,10 @@ function Card({ guideData }: any) {
         <div className="ratings-container">
           <div className="rating__starIcon"></div>
           <p className="star-rating">
-            {guideData.rating}
-            <span className="ratings__quantity">({guideData.reviewCount})</span>
+            {guideData.stats.rating}
+            <span className="ratings__quantity">
+              ({guideData.stats.reviewCount})
+            </span>
             <span className="dot">.</span>
             <span className="location">{guideData.country}</span>
           </p>
