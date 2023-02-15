@@ -1,6 +1,14 @@
 import "./Card.css";
 
 function Card({ guideData }: any) {
+  let badgeText = "";
+  if (guideData.openSpots === 0) {
+    badgeText = "Sold Out";
+  } else if (guideData.location === "Online") {
+    badgeText = "Online";
+  }
+  const badgeDiv = badgeText && <div className="img__label">{badgeText}</div>;
+
   return (
     <div className="card-container">
       <div className="card__img-container">
@@ -9,7 +17,7 @@ function Card({ guideData }: any) {
           alt=""
           className="card__img"
         />
-        <div className="img__label">Sold Out</div>
+        {badgeDiv}
       </div>
       <div className="card__content">
         <div className="ratings-container">
